@@ -3,6 +3,7 @@ version 0.5
 
 by Adam Murray
 
+Latest stable version: http://github.com/adamjmurray/max_csv_tools/zipball/0.5
 
 ------------------------
 INSTALLATION
