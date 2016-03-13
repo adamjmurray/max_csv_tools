@@ -1,33 +1,38 @@
-Max CSV Tools
-version 0.5
+# Max CSV / TSV Tools
+Version 0.6
 
 by Adam Murray
 
-Latest stable version: http://github.com/adamjmurray/max_csv_tools/zipball/0.5
+Latest version: https://github.com/adamjmurray/max_csv_tools/archive/master.zip
 
-------------------------
-INSTALLATION
+
+## INSTALLATION
 
 Put this folder somewhere on your Max search path (see Options -> File Preferences)
 
-Get started with the maxhelp file for cellblock2csv
+Get started with the maxhelp file for cellblock2csv or csv2cellblock
 
 
-------------------------
-ABOUT
+## LIMITATIONS
 
-Currently this project consists of one Max abstraction cellblock2csv, which lets you 
-export tabular data from Max's cellblock object to a CSV (comma separated value) file.
-CSV is a format supported by spreadsheet programs, so you can use this to edit data
+csv2cellblock only works with tsv (tab separated value) formatted files. 
+It also doesn't handle tabs inside a spreadsheet cell. 
+
+Most spreadsheets can export as tsv, so this should work for the majority of use
+cases. If you need to convert a csv to tsv, you can do that for free with Google Spreadsheets.
+
+
+## ABOUT
+
+This is an add-on for [Cycling '74 Max](https://cycling74.com/max7/)
+
+CSV/TSV is a format supported by spreadsheet programs, so you can use this to edit data
 from Max in an application like Excel or OpenOffice.
 
-In the future I may add a csv2cellblock object, and perhaps a pair of objects for 
-importing and exporting data directly from a Jitter matrix. 
-Do you want that? Then send a request to me and I might build it sooner.
-
 
 ------------------------
-Copyright (c) 2009-2010 Adam Murray (adam [at] compusition . com)
+
+Copyright (c) 2009-2016 Adam Murray (adam [at] compusition . com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
