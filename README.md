@@ -1,5 +1,5 @@
 # Max CSV / TSV Tools
-Version 0.6
+Version 0.7
 
 by Adam Murray
 
@@ -15,8 +15,8 @@ Get started with the maxhelp file for cellblock2csv or csv2cellblock
 
 ## LIMITATIONS
 
-csv2cellblock only works with tsv (tab separated value) formatted files. 
-It also doesn't handle tabs inside a spreadsheet cell. 
+csv2cellblock only works with tsv (tab separated value) formatted files.
+It also doesn't handle tabs inside a spreadsheet cell.
 
 Most spreadsheets can export as tsv, so this should work for the majority of use
 cases. If you need to convert a csv to tsv, you can do that for free with Google Spreadsheets.
@@ -32,7 +32,7 @@ from Max in an application like Excel or OpenOffice.
 
 ------------------------
 
-Copyright (c) 2009-2016 Adam Murray (adam [at] compusition . com)
+Copyright (c) 2009-2020 Adam Murray (adam [at] compusition . com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

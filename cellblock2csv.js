@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2009 Adam Murray (adam@compusition.com)
+Copyright (c) 2020 Adam Murray (adam@compusition.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -35,14 +35,14 @@ function init() {
 
 function list() {
 	var args = arrayfromargs(arguments)
-	var colIdx = args.shift() 
+	var colIdx = args.shift()
 	var rowIdx = args.shift()
 	var value = args.join(' ')
 
 	var row = matrix[rowIdx]
 	if(!row) row = matrix[rowIdx] = new Array()
 	row[colIdx] = value
-	
+
 	var rowCount = rowIdx+1
 	var colCount = colIdx+1
 	if(rowCount > rows) rows = rowCount
@@ -52,7 +52,7 @@ function list() {
 function write(filepath) {
 	var file = new File(filepath, 'write', '')
 	for(var rowIdx=0; rowIdx<rows; rowIdx++) {
-		var row = matrix[rowIdx]
+		var row = matrix[rowIdx] || []
 		var line = ''
 		for(var colIdx=0; colIdx<cols; colIdx++) {
 			if(colIdx > 0) line += ','
